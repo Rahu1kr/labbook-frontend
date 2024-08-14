@@ -6,18 +6,19 @@ const Banner = () => {
         <div className="mx-auto max-w-7xl px-5 py-10">
             <div className="relative">
                 <Image
-                src={'/paper-bg.jpg'}
-                alt="billboard"
-                className="h-72 w-full rounded-lg"
-                height={0}
+                    src={'/paper-bg.jpg'}
+                    alt="billboard"
+                    className="h-72 w-full rounded-lg"
+                    width={1920} 
+                    height={1080} 
                 />
                 <div className="absolute inset-0 h-full w-full rounded-lg bg-gray-950 opacity-30" />
                 <Image
                     src={'/book.png'}
                     alt="billboard"
                     className="absolute bottom-0 right-5"
-                    height={0}
-                    width={0}
+                    width={500} 
+                    height={500} 
                     sizes="100vw"
                     style={{ width: 'auto', height: '18rem' }}
                 />
@@ -28,4 +29,5 @@ const Banner = () => {
         </div>
     );
 };
+
 export default Banner;
