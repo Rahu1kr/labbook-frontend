@@ -8,6 +8,7 @@ const SingleBookPage = async ({ params }: { params: { bookId: string } }) => {
   try {
     const response = await fetch(
       `${process.env.BACKEND_URL}/books/${params.bookId}`,{
+        // if no need of any cache like Request Memoization, Data Cache, Full Route Cache, Router Cache
         // cache: 'no-store',
         next: {
             revalidate: 3600,
